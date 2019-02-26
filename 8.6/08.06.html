@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Votes of Party</title>
+    <link rel="stylesheet" type="text/css" href="08.06.css" />
+</head>
+<body>
+    <h1>Votes of Party</h1>
+
+    <form>
+        <p>
+            <label>Total votes by the whole party: </label>
+            <input type="text" id="txtVotes" size="5" />
+        </p>
+        <p>
+            <label>Number of candidates in the party: </label>
+            <input type="text" id="txtCandidates" size="3" />
+        </p>
+        <p>
+            <label>&nbsp;</label>
+            <input type="button" value="Show the comparison scores" onClick="showComparisonScores()" />
+        </p>
+    </form>
+
+    <p id="pOutput"></p>
+
+    <script src="08.06.js"></script>
+</body>
+</html>
+
+<!-- test example:
+votes = 10000, candidates = 5 -> 1. candidate: 10000
+  2. candidate: 5000
+  3. candidate: 3333
+  4. candidate: 2500
+  5. candidate: 2000
+-->

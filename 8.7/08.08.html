@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Game</title>
+</head>
+<body>
+    <h1>Game</h1>
+
+    <form>
+        <label>Rounds: </label>
+        <input type="text" id="txtRounds" size="3" />
+        <input type="button" value="Play" onClick="calculateProfit()" />
+    </form>
+
+    <p id="pOutput"></p>
+
+    <script src="08.08.js"></script>
+</body>
+</html>
+
+<!-- test example (You will not get exactly same values as the result is random):
+rounds = 500 -> Bets were altogether 500.00 euros
+        Wins were 344.75 euros
+        Profit was 1155.25 euros
+
+rounds = 500 -> Bets were altogether 500.00 euros
+        Wins were 322.00 euros
+        Profit was 178.00 euros
+-->
+
