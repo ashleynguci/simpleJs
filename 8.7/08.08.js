@@ -3,7 +3,7 @@
 function calculateProfit() {
   // Read value of rounds from the input field
 
-  var numberOfRound = document.getElementById("txtRounds").value;
+  var numberOfRound = Number(document.getElementById("txtRounds").value);
   var winsMoney = 0;
   for (var i = 0; i < numberOfRound; i++) {
     var pips = Math.round(Math.random() * 5 + 1);
@@ -17,14 +17,14 @@ function calculateProfit() {
   }
   var output =
     "Bets were altogether " +
-    parseFloat(numberOfRound).toFixed(2) +
+    numberOfRound.toFixed(2) +
     " euros" +
     "<br>" +
     "Wins were " +
-    parseFloat(winsMoney).toFixed(2) +
+    winsMoney.toFixed(2) +
     " euros <br>" +
     "Profit was " +
-    parseFloat(numberOfRound - winsMoney).toFixed(2) +
+    (numberOfRound - winsMoney).toFixed(2) +
     " euros";
 
   document.getElementById("pOutput").innerHTML = output;

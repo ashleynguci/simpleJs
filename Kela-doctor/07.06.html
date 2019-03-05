@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Kela reimbursement</title>
+    <link rel="stylesheet" type="text/css" href="07.06.css">
+</head>
+<body>
+    <h1>Kela reimbursement</h1>
+
+    <form>
+        <p>
+            <label>Length of the visit: </label>
+            <input type="text" id="txtLength" size="3" /> min
+
+        </p>
+        <p>
+            <label>Doctor’s fee: </label>
+            <input type="text" id="txtDoctorsFee" size="8" /> euros
+
+        </p>
+        <p>
+            <input type="button" value="Calculate" onclick="calculate()" />
+        </p>
+    </form>
+
+    <div id="divOutput"></div>
+	
+	<script src="07.06.js"></script>
+</body>
+</html>
+
+<!-- test example:
+length = 21, doctorsFee = 69 -> Doctor’s Fee 69.00 euros
+            Kela reimbursement 13.50 euros
+            Office Fee 15.90 euros
+            Customer needs to pay 71.40 euros
+-->
