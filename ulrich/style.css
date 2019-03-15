@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #24272e;
+}
+
+header {
+  background: white;
+  padding: 20px;
+}
+
+.green-glow {
+  border: 4px solid #4dcc7d;
+  box-shadow: 0 0 10px #31b43a;
+}
+
+.red-glow {
+  border: 4px solid #fc121b;
+  box-shadow: 0 0 10px #d01115;
+}
+.gray-glow {
+  border: 4px solid #464647;
+  box-shadow: 0 0 10px #25292b;
+}
+
+header > h1 {
+  color: #24272e;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.score-board {
+  margin: 20px auto;
+  border: 3px solid white;
+  border-radius: 4px;
+  text-align: center;
+  width: 200px;
+  color: white;
+  font-size: 46px;
+  padding: 15px 20px;
+  font-family: sans-serif;
+  position: relative;
+}
+
+.badge {
+  background: #e25840;
+  color: white;
+  font-size: 14px;
+  padding: 5px 10px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+#user-label {
+  position: absolute;
+  top: 30px;
+  left: -25px;
+}
+
+#com-label {
+  position: absolute;
+  top: 30px;
+  right: -25px;
+}
+
+.result {
+  font-size: 40px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+#choices {
+  margin: 50px 0;
+  text-align: center;
+}
+
+.choice {
+  border: 4px solid white;
+  border-radius: 3px;
+  padding: 20px 0px;
+  display: inline-block;
+  transition: all 0.3s ease;
+  margin: 10px;
+}
+
+.choice > img {
+  height: 70%;
+  width: 70%;
+}
+
+.choice:hover {
+  cursor: pointer;
+  background: rgb(45, 67, 119);
+}
