@@ -1,74 +1,60 @@
 ﻿<!DOCTYPE html>
 <html>
-<head>
-  <title>Fish catch database - Recapping JavaScript</title>
-  <meta charset="utf-8" />
-  <!-- merely adding the Materialize or Bootsrap CSS gives more modern looks -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-</head>
-<body>
-  <h1>Example</h1>
-  <p>Fish info: First version with three separate arrays. 
-        (Second version could be with Fish objects)</p>
-  <hr /> <!-- --------------------------------------------------- -->
+  <head>
+    <title>Players and Scores - Recapping JavaScript</title>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <h1>Example</h1>
+    <p>
+      Players and scores: First version with two separate arrays. (Second could
+      be with Player objects)
+    </p>
+    <hr />
+    <!-- ----------------------------------------------- -->
 
-  <p>
-    <span>Enter the species of the fish:</span>
-    <input type="text" id="txtSpecies" />
-    <br />
+    <p>
+      <span>Enter the name of the player:</span>
+      <input type="text" id="txtName" />
+      <br />
 
-    <span>Enter its length:</span>
-    <input type="text" id="txtLength" />
-    <span>cm</span>
-    <br />
+      <span>Enter her/his score:</span>
+      <input type="text" id="txtScore" />
+      <br />
 
-    <span>Enter its weight:</span>
-    <input type="text" id="txtWeight" />
-    <span>kg</span>
-    <br />
+      <button id="addPlayer" onclick="addPlayer();">
+        Add player and clear input fields
+      </button>
+    </p>
+    <hr />
+    <!-- ----------------------------------------------- -->
 
-    <button onclick="addFish();">
-         Add fish and clear the input fields</button>
-  </p>
-  <p id="pOutput1"></p>
-  <hr /> <!-- --------------------------------------------------- -->
+    <p>
+      <button id="listPlayer" onclick="listPlayers();">List players</button>
+    </p>
+    <p id="pOutput"></p>
 
-  <p>
-    <button onclick="listAllCatch();">List all the catch</button>
-  </p>
-  <p id="pOutput2"></p>
+    <hr />
+    <!-- ----------------------------------------------- -->
 
-  <hr /> <!-- --------------------------------------------------- -->
- 
-  <p>
-    <button onclick="showAverageWeight();">Show average weight
-    </button>
-  </p>
-  <p id="pOutput3"></p>
+    <p>
+      <span>Enter the name of the player to search:</span>
+      <input type="text" id="searchName" />
+      <button onClick="searchPlayer();">Search</button>
+    </p>
+    <p id="pOutput2"></p>
 
-  <hr /> <!-- --------------------------------------------------- -->   
-  <p>
-    <span>Enter the species of the fish to look for (e.g. Perch or
-      Salmon)</span>
-    <input type="text" id="txtSpeciesSearched" />
-    <button onclick="findFish();">Find all this kind of fish</button>
-  </p>
-  <p id="pOutput4"></p>
+    <hr />
+    <!-- ----------------------------------------------- -->
 
-  <hr /> <!-- --------------------------------------------------- -->
+    <p>
+      <button onclick="findWinner();">find Winner</button>
+    </p>
+    <p id="pOutput3"></p>
 
-  <p>
-      <button onclick="maxWeightFreshmanWay();">
-          Heaviest fish freshman way</button> 
-      
-      <button onclick="maxWeightUsingIndex();">
-          Heaviest fish more professional way, using index</button>
-  </p>
-  <p>(1 lbs is 0.454 kg)</p>
-  <p id="pOutput5"></p>
+    <hr />
+    <script src="player_code.js"></script>
 
-  <hr /> <!-- --------------------------------------------------- -->
-
-  <script src="fish_code.js"></script>
-</body>
+    <!-- ----------------------------------------------- -->
+  </body>
 </html>
